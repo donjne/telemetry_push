@@ -9,3 +9,5 @@ Cargo.lock
 # Ignore other temporary files
 *.log
 *.tmp
+
+.env
