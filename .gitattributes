@@ -1,0 +1,3 @@
+target/debug/deps/telemetry_tool.pdb filter=lfs diff=lfs merge=lfs -text
+target/debug/deps/libwindows-666f638178a14231.rlib filter=lfs diff=lfs merge=lfs -text
+target/debug/deps/libsqlx_postgres-4265f36eff315470.rlib filter=lfs diff=lfs merge=lfs -text

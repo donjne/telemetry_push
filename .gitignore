@@ -1,0 +1,11 @@
+# Ignore build artifacts
+/target/
+Cargo.lock
+
+# Ignore IDE-specific files
+/.idea/
+/.vscode/
+
+# Ignore other temporary files
+*.log
+*.tmp

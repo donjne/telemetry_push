@@ -1,0 +1,30 @@
+[package]
+name = "telemetry_tool"
+version = "0.1.0"
+edition = "2021"
+
+[build]
+build = "build.rs"
+
+[profile.dev.package.sqlx-macros]
+opt-level = 3
+
+[dependencies]
+sysinfo = "0.30"
+actix-web = "4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.29", features = ["full"] }
+chrono = { version = "0.4", features = ["serde"] }
+reqwest = { version = "0.12", features = ["json"] }
+local-ip-address = "0.6.1"
+rand = "0.8"
+argon2 = "0.5"
+thiserror = "1.0.61"
+sqlx = { version = "0.7.4", features = ["postgres", "runtime-tokio-native-tls", "chrono"] }
+sha2 = "0.10"
+dotenvy = "0.15"
+jsonwebtoken = "9"
+futures = "0.3"
+actix-service = "2"
+log = "0.4.21"
